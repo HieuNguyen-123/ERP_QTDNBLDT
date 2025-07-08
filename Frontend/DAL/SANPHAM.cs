@@ -17,9 +17,9 @@ namespace DAL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SANPHAM()
         {
+            this.CHITIETHOADONs = new HashSet<CHITIETHOADON>();
             this.CHITIETNHAPKHOes = new HashSet<CHITIETNHAPKHO>();
             this.CHITIETXUATKHOes = new HashSet<CHITIETXUATKHO>();
-            this.CHITIETHOADONs = new HashSet<CHITIETHOADON>();
             this.TONKHOes = new HashSet<TONKHO>();
         }
     
@@ -34,11 +34,11 @@ namespace DAL
         public string TRANGTHAI { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CHITIETHOADON> CHITIETHOADONs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETNHAPKHO> CHITIETNHAPKHOes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETXUATKHO> CHITIETXUATKHOes { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CHITIETHOADON> CHITIETHOADONs { get; set; }
         public virtual NHACUNGCAP NHACUNGCAP { get; set; }
         public virtual PHANLOAIMATHANG PHANLOAIMATHANG { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

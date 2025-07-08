@@ -22,8 +22,8 @@ namespace DAL
             this.LUONGs = new HashSet<LUONG>();
             this.PHUCAPNVs = new HashSet<PHUCAPNV>();
             this.TANGCAs = new HashSet<TANGCA>();
-            this.TINHCONGs = new HashSet<TINHCONG>();
             this.THUs = new HashSet<THU>();
+            this.TINHCONGs = new HashSet<TINHCONG>();
         }
     
         public int MANV { get; set; }
@@ -54,8 +54,8 @@ namespace DAL
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TANGCA> TANGCAs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TINHCONG> TINHCONGs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<THU> THUs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TINHCONG> TINHCONGs { get; set; }
     }
 }

@@ -13,10 +13,10 @@ namespace DAL
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QUANLY_ERPH1Entities1 : DbContext
+    public partial class QUANLY_ERPH1Entities : DbContext
     {
-        public QUANLY_ERPH1Entities1()
-            : base("name=QUANLY_ERPH1Entities1")
+        public QUANLY_ERPH1Entities()
+            : base("name=QUANLY_ERPH1Entities")
         {
         }
     
@@ -28,9 +28,9 @@ namespace DAL
         public virtual DbSet<BAOHIEM> BAOHIEMs { get; set; }
         public virtual DbSet<BOPHAN> BOPHANs { get; set; }
         public virtual DbSet<CHI> CHIs { get; set; }
+        public virtual DbSet<CHITIETHOADON> CHITIETHOADONs { get; set; }
         public virtual DbSet<CHITIETNHAPKHO> CHITIETNHAPKHOes { get; set; }
         public virtual DbSet<CHITIETXUATKHO> CHITIETXUATKHOes { get; set; }
-        public virtual DbSet<CHITIETHOADON> CHITIETHOADONs { get; set; }
         public virtual DbSet<CHUCVU> CHUCVUs { get; set; }
         public virtual DbSet<HOADON> HOADONs { get; set; }
         public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
@@ -50,9 +50,9 @@ namespace DAL
         public virtual DbSet<QUYEN> QUYENs { get; set; }
         public virtual DbSet<SANPHAM> SANPHAMs { get; set; }
         public virtual DbSet<TANGCA> TANGCAs { get; set; }
+        public virtual DbSet<THU> THUs { get; set; }
         public virtual DbSet<TINHCONG> TINHCONGs { get; set; }
         public virtual DbSet<TONKHO> TONKHOes { get; set; }
-        public virtual DbSet<THU> THUs { get; set; }
         public virtual DbSet<TRINHDO> TRINHDOes { get; set; }
         public virtual DbSet<VAITRO> VAITROes { get; set; }
         public virtual DbSet<XUATKHO> XUATKHOes { get; set; }

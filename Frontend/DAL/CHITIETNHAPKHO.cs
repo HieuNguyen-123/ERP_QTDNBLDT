@@ -19,7 +19,6 @@ namespace DAL
         public int MASP { get; set; }
         public int SOLUONGNHAP { get; set; }
         public long DONGIA { get; set; }
-        public Nullable<System.DateTime> NGAYHETHAN { get; set; }
     
         public virtual NHAPKHO NHAPKHO { get; set; }
         public virtual SANPHAM SANPHAM { get; set; }
